@@ -22,10 +22,64 @@
       padding: 0;
       box-sizing: border-box;
     }
-  
-      .logo {
+    
+     body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--white);
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+     header {
+      display: flex;
+      font-family: 'Poppins', sans-serif;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: var(--white);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    nav a {
+      font-family: 'Poppins', sans-serif;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--navy);
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: var(--primary-blue);
+      bottom: -4px;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+    
+    footer {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--navy);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.875rem;
+    }
+
+    .logo {
       height: 48px;
     }
+    
 </style>
 </head>
   
