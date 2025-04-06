@@ -6,6 +6,14 @@
   <title>Nexcure Biologics</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --primary-blue: #0072FF;
+      --accent-blue: #00C6FF;
+      --navy: #0D1B2A;
+      --gray-bg: #F5F5F5;
+      --white: #FFFFFF;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -14,8 +22,8 @@
     }
 
     body {
-      background-color: #ffffff;
-      color: #111;
+      background-color: var(--white);
+      color: var(--navy);
       line-height: 1.6;
     }
 
@@ -24,42 +32,65 @@
       justify-content: space-between;
       align-items: center;
       padding: 1.5rem 2rem;
-      background-color: #ffffff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      background-color: var(--white);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     .logo {
-      height: 40px;
+      height: 48px;
     }
 
     nav a {
       margin-left: 1.5rem;
       text-decoration: none;
-      color: #111;
+      color: var(--navy);
       font-weight: 500;
+      position: relative;
     }
 
-    nav a:hover {
-      color: #0072FF;
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: var(--primary-blue);
+      bottom: -4px;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
     }
 
     .hero {
       text-align: center;
-      padding: 5rem 2rem;
-      background: linear-gradient(to right, #00C6FF, #0072FF);
-      color: white;
+      padding: 6rem 2rem;
+      background: linear-gradient(135deg, var(--accent-blue), var(--primary-blue));
+      color: var(--white);
     }
 
     .hero h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: 700;
       margin-bottom: 1rem;
     }
 
     .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
+      font-size: 1.25rem;
+      max-width: 620px;
       margin: 0 auto;
+    }
+
+    footer {
+      background-color: var(--navy);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.875rem;
     }
   </style>
 </head>
@@ -81,5 +112,9 @@
     <h1>Revolutionizing Rare Disease Care with Biologics</h1>
     <p>At Nexcure Biologics, we're building the future of affordable biologics for every patient, everywhere.</p>
   </section>
+
+  <footer>
+    &copy; 2025 Nexcure Biologics. All rights reserved.
+  </footer>
 </body>
 </html>
