@@ -8,7 +8,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <style>
-:root {
+    :root {
       --primary-blue: #0072FF;
       --accent-blue: #00C6FF;
       --navy: #0D1B2A;
@@ -66,7 +66,22 @@
     nav a:hover::after {
       width: 100%;
     }
-    
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+
+    .feature-box {
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+      }
+
     footer {
       font-family: 'Poppins', sans-serif;
       background-color: var(--navy);
@@ -102,6 +117,34 @@
     <p>At Nexcure Biologics, we're building the future of affordable biologics for every patient, everywhere.</p>
   </section>
     
+  <div class="features">
+     <div class="feature-box" data-aos="fade-up"> 
+     <h4>mRNA Innovation</h4>
+     <p>Harnessing advanced mRNA platforms to engineer precision biologics that work at the molecular level.</p>
+     </div>
+
+     <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+     <h4>Patient-centric Science</h4>
+     <p>We center patients in every decision, especially those in rare and neglected disease spaces.</p>
+     </div>
+
+     <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+     <h4>Global Equity</h4>
+     <p>Scalable, affordable, and locally relevant treatments made accessible to all who need them.</p>
+     </div>
+ 
+  </div>
+  <br>
+  With science at our core and compassion as our compass, we’re designing more than just treatments <br> 
+  We’re building a future where rare doesn’t mean forgotten.
+  
+  </section>
+
+  <footer>
+    &copy; 2025 Nexcure Biologics. All rights reserved.<br>
+    Designed by Nexcure Biologics<br>
+    <div class="legal">Website content is for informational purposes only and does not constitute medical advice or endorsement.</div>
+  </footer>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
