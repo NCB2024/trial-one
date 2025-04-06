@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nexcure Biologics</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papb/jn+3P4Iz+oO9Q3FZ9a6KTu3LTYAljZz1IDUAdh+HbNdCcbJkNOv6U59wFykm5cq7CHOTK1Z2Z0+E4zxxQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     :root {
       --primary-blue: #0072FF;
@@ -85,12 +87,102 @@
       margin: 0 auto;
     }
 
+    .about {
+      padding: 5rem 2rem;
+      background-color: var(--gray-bg);
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--primary-blue);
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+    }
+
+    .feature-box {
+      background-color: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      width: 260px;
+    }
+
+    .feature-box i {
+      font-size: 2rem;
+      color: var(--primary-blue);
+      margin-bottom: 1rem;
+    }
+
+    .feature-box h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-box p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
     footer {
       background-color: var(--navy);
       color: var(--white);
       padding: 2rem;
       text-align: center;
       font-size: 0.875rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .about h2 {
+        font-size: 2rem;
+      }
+
+      .about p {
+        font-size: 1rem;
+      }
+
+      .feature-box {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -99,7 +191,7 @@
     <img src="NCB_Logo_HiRes.png" alt="Nexcure Logo" class="logo" />
     <nav>
       <a href="#">Home</a>
-      <a href="#">About</a>
+      <a href="#about">About</a>
       <a href="#">Pipeline</a>
       <a href="#">Technology</a>
       <a href="#">Partners</a>
@@ -109,12 +201,42 @@
   </header>
 
   <section class="hero">
-    <h1>Pioneering Innovation for Rare and Unmet Needs</h1>
+    <h1>Revolutionizing Rare Disease Care with Biologics</h1>
     <p>At Nexcure Biologics, we're building the future of affordable biologics for every patient, everywhere.</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p><strong>Nexcure Biologics</strong> is a next-generation biotechnology company pioneering the development of biologics for rare and underserved diseases. Our approach blends cutting-edge mRNA technology with precision protein engineering to address some of the most urgent unmet needs in healthcare.</p>
+    <p>Born out of a vision for equitable access, our therapies are designed with affordability, scalability, and local healthcare realities in mind. We focus on diseases that are often overlooked—bringing hope to patients and families who have waited too long for a breakthrough.</p>
+    <p>With science at our core and compassion as our compass, we’re building more than medicine—we’re building a future where rare doesn’t mean forgotten.</p>
+
+    <div class="features">
+      <div class="feature-box" data-aos="fade-up">
+        <i class="fas fa-dna"></i>
+        <h4>mRNA Innovation</h4>
+        <p>Harnessing advanced mRNA platforms to engineer precision biologics that work at the molecular level.</p>
+      </div>
+      <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-heartbeat"></i>
+        <h4>Compassionate Science</h4>
+        <p>We center patients in every decision, especially those in rare and neglected disease spaces.</p>
+      </div>
+      <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-globe"></i>
+        <h4>Global Equity</h4>
+        <p>Scalable, affordable, and locally relevant treatments made accessible to all who need them.</p>
+      </div>
+    </div>
   </section>
 
   <footer>
     &copy; 2025 Nexcure Biologics. All rights reserved.
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
