@@ -17,13 +17,23 @@
       --white: #FFFFFF;
     }
 
-      * {
+    * {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
+    html, body {
+      height: 100%;
+    }
+
+    .page-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       background-color: var(--white);
@@ -43,7 +53,7 @@
       top: 0;
       z-index: 1000;
     }
-    
+
     nav a {
       font-family: 'Poppins', sans-serif;
       margin-left: 1.5rem;
@@ -71,6 +81,7 @@
     .contact {
       padding: 80px 20px;
       text-align: center;
+      flex: 1;
     }
 
     .contact h2 {
@@ -105,13 +116,12 @@
       padding: 2rem;
       text-align: center;
       font-size: 0.875rem;
-      bottom: 0;
     }
 
     .logo {
       height: 48px;
     }
-    
+
     .legal {
       font-size: 0.8rem;
       margin-top: 10px;
@@ -119,37 +129,36 @@
     }
   </style>
 </head>
-<div class="page-container">
 <body>
-   <header>
-    <img src="NCB_Logo_HiRes.png" alt="Nexcure Logo" class="logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#about">About</a>
-      <a href="#pipeline">Pipeline</a>
-      <a href="#technology">Technology</a>
-      <a href="#partners">Partners</a>
-      <a href="#news">News</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <header>
+      <img src="NCB_Logo_HiRes.png" alt="Nexcure Logo" class="logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#technology">Technology</a>
+        <a href="#partners">Partners</a>
+        <a href="#news">News</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>We’d love to hear from you. Reach out for collaborations, inquiries, or just to connect!</p>
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you. Reach out for collaborations, inquiries, or just to connect!</p>
 
-    <div class="contact-info" data-aos="fade-up">
-      <p><strong>Email:</strong> <a href="mailto:nexcurebiologics@gmail.com">nexcurebiologics@gmail.com</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/nexcurebiologics-pvtltd/about/" target="_blank">Nexcure Biologics Pvt Ltd</a></p>
-    </div>
-  </section>
+      <div class="contact-info" data-aos="fade-up">
+        <p><strong>Email:</strong> <a href="mailto:nexcurebiologics@gmail.com">nexcurebiologics@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/nexcurebiologics-pvtltd/about/" target="_blank">Nexcure Biologics Pvt Ltd</a></p>
+      </div>
+    </section>
 
-  <footer>
-    &copy; 2025 Nexcure Biologics. All rights reserved.<br>
-    Designed by Nexcure Biologics<br>
-    <div class="legal">Website content is for informational purposes only and does not constitute medical advice or endorsement.</div>
-  </footer>
-</div>
+    <footer>
+      &copy; 2025 Nexcure Biologics. All rights reserved.<br>
+      Designed by Nexcure Biologics<br>
+      <div class="legal">Website content is for informational purposes only and does not constitute medical advice or endorsement.</div>
+    </footer>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
