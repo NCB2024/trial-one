@@ -1,1 +1,78 @@
+/* Reset margins and set fonts */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, #29c5f6, #1e8edc);
+  transition: width 0.3s;
+  width: 0;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section (background image with parallax effect) */
+.hero {
+  height: 100vh;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(90deg, #29c5f6, #1e8edc);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
 
