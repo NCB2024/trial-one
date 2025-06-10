@@ -4,7 +4,6 @@
     :root {
       --primary-blue: #00B8F0;
       --gradient-blue: #007EC6;
-      --accent-yellow: #FDC500;
       --dark-text: #111111;
       --light-bg: #FFFFFF;
     }
@@ -34,11 +33,27 @@
       text-decoration: none;
       margin: 0 15px;
       font-weight: 500;
+      position: relative;
       transition: all 0.3s ease;
     }
 
+    .navbar a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: -5px;
+      background: linear-gradient(90deg, var(--primary-blue), var(--gradient-blue));
+      transition: width 0.3s ease;
+    }
+
+    .navbar a:hover::after {
+      width: 100%;
+    }
+
     .navbar a:hover {
-      border-bottom: 2px solid var(--accent-yellow);
+      color: var(--gradient-blue);
     }
 
     .logo img {
@@ -58,6 +73,10 @@
     <div>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
+      <a href="pipeline.html">Pipeline</a>
+      <a href="technology.html">Technology</a>
+      <a href="partners.html">Partners</a>
+      <a href="news.html">News</a>
       <a href="contact.html">Contact</a>
     </div>
   </div>
