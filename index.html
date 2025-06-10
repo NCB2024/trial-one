@@ -6,7 +6,7 @@
       --gradient-blue: #007EC6;
       --accent-yellow: #FDC500;
       --dark-text: #111111;
-      --light-bg: #F7F9FB;
+      --light-bg: #FFFFFF;
     }
 
     body {
@@ -20,19 +20,21 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: linear-gradient(90deg, var(--primary-blue), var(--gradient-blue));
-      padding: 8px 20px;
-      color: white;
+      background-color: var(--light-bg);
+      padding: 10px 20px;
+      color: var(--dark-text);
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
 
     .navbar a {
-      color: white;
+      color: var(--primary-blue);
       text-decoration: none;
       margin: 0 15px;
       font-weight: 500;
+      transition: all 0.3s ease;
     }
 
     .navbar a:hover {
