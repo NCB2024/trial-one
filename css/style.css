@@ -70,7 +70,7 @@ nav a:hover {
 /* Hero Section (background image with parallax effect) */
 .hero {
   height: 100vh;
-  background-image: url('../images/background.png');
+  background-image: url('/images/background.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
