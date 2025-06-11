@@ -130,16 +130,46 @@ nav a:hover {
   font-weight: 600;
 }
 
-#about {
+.about-section {
   background-color: #ffffff;
-  padding: 80px 60px;
+  padding: 80px 40px;
   text-align: center;
 }
 
-#technology {
-  background-color: #f9f9f9;
-  padding: 80px 60px;
-  text-align: center;
+.about-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.about-section h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-section .highlight-blue {
+  color: #4291D3;
+  font-weight: 700;
+}
+
+.about-section p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.about-section .about-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
 #pipeline {
