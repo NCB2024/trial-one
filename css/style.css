@@ -37,7 +37,10 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
@@ -88,9 +91,9 @@ nav a:hover {
   backdrop-filter: blur(4px);
   background: rgba(255, 255, 255, 0.6);
   padding: 60px 30px;
-  max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .hero-content h1 {
@@ -100,6 +103,10 @@ nav a:hover {
   text-align: center;
   margin: 20;
   line-height: 1.2;
+}
+
+.hero-content h1 span {
+  color: #b03060;
 }
 
 .hero-content p {
@@ -117,7 +124,8 @@ nav a:hover {
 }
 
 .highlight-text {
-  color: #800000; /* maroon red */
+  color: #b03060; /* maroon red */
+  font-weight: 600;
 }
 
 /* Footer Styling */
