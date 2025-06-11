@@ -130,6 +130,30 @@ nav a:hover {
   font-weight: 600;
 }
 
+#about {
+  background-color: #ffffff;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+#technology {
+  background-color: #f9f9f9;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+#pipeline {
+  background-color: #ffffff;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+#team {
+  background-color: #f9f9f9;
+  padding: 80px 60px;
+  text-align: center;
+}
+
 /* Footer Styling */
 footer {
   background: #001132;
