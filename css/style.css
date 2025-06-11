@@ -28,7 +28,7 @@ header {
   background: #ffffff;
   z-index: 1000;
   backdrop-filter: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
@@ -160,13 +160,13 @@ nav a:hover {
   font-size: 20px;
   font-weight: 400;
   color: #444;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto 40px auto;
   line-height: 1.6;
 }
 
 .about-section .about-image img {
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
   display: block;
   margin: 0 auto;
