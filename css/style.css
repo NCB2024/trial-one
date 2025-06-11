@@ -166,6 +166,13 @@ footer {
   font-size: 14px;
 }
 
+.legal {
+      font-size: 0.8rem;
+      margin-top: 10px;
+      color: #999;
+    }
+
+
 @media (max-width: 1024px) {
   nav ul {
     gap: 12px;
